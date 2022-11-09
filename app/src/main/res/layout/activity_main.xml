@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+<LinearLayout
+android:id="@+id/linearLayout"
+android:layout_width="409dp"
+android:layout_height="70dp"
+android:layout_marginStart="1dp"
+android:layout_marginTop="24dp"
+android:layout_marginEnd="1dp"
+android:layout_marginBottom="660dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="Elejir la categoria de viaje"
+    android:textSize="30dp" />
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout2"
+android:layout_width="409dp"
+android:layout_height="120dp"
+android:layout_marginStart="1dp"
+android:layout_marginTop="1dp"
+android:layout_marginEnd="1dp"
+android:layout_marginBottom="527dp"
+android:orientation="vertical"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioButton
+        android:id="@+id/rbpremiun"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:checked="true"
+        android:text="  premiun"
+        android:textSize="25dp" />
+
+    <RadioButton
+        android:id="@+id/rbnormal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="  normal"
+        android:textSize="25dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RadioButton
+        android:id="@+id/rbeconomico"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text=" economico"
+        android:textSize="25dp" />
+</RadioGroup>
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout3"
+android:layout_width="409dp"
+android:layout_height="60dp"
+android:layout_marginStart="1dp"
+android:layout_marginTop="1dp"
+android:layout_marginEnd="1dp"
+android:layout_marginBottom="466dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    <TextView
+        android:id="@+id/tvfinca"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1000000"
+        android:textSize="25dp" />
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout4"
+android:layout_width="409dp"
+android:layout_height="60dp"
+android:layout_marginStart="1dp"
+android:layout_marginTop="1dp"
+android:layout_marginEnd="1dp"
+android:layout_marginBottom="404dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+<EditText
+    android:id="@+id/etcantidad"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:ems="10"
+    android:gravity="center"
+    android:hint="Cantidad de personas"
+    android:inputType="number"
+    android:textSize="25dp" />
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout5"
+android:layout_width="409dp"
+android:layout_height="60dp"
+android:layout_marginStart="1dp"
+android:layout_marginTop="1dp"
+android:layout_marginEnd="1dp"
+android:layout_marginBottom="343dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Adicionales"
+        android:textSize="25dp" />
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout6"
+android:layout_width="409dp"
+android:layout_height="60dp"
+android:layout_marginStart="1dp"
+android:layout_marginTop="1dp"
+android:layout_marginEnd="1dp"
+android:layout_marginBottom="281dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+<CheckBox
+    android:id="@+id/cbvehiculo"
+    android:layout_width="22dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:text="  Vehiculo"
+    android:textSize="25dp" />
+
+<TextView
+    android:id="@+id/tvvehiculo"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="0"
+    android:textSize="25dp" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="220dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/tvtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+android:id="@+id/linearLayout9"
+android:layout_width="409dp"
+android:layout_height="60dp"
+android:layout_marginStart="1dp"
+android:layout_marginTop="1dp"
+android:layout_marginEnd="1dp"
+android:layout_marginBottom="97dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+<Button
+    android:id="@+id/btcalcular"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:onClick="Calcular_valor_viaje"
+    android:textSize="25dp"
+    android:text="Calcular valor" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="409dp"
+android:layout_height="60dp"
+android:layout_marginStart="1dp"
+android:layout_marginTop="1dp"
+android:layout_marginEnd="1dp"
+android:layout_marginBottom="35dp"
+android:orientation="horizontal"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+<Button
+    android:id="@+id/btlimpiar"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:textSize="25dp"
+    android:text="Limpiar"
+    android:onClick="Limpiar"/>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
